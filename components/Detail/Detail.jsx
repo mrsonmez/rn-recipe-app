@@ -4,6 +4,7 @@ import { API_URL } from "@env";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import DetailCard from "./Card/DetailCard";
+import Lottie from "lottie-react-native";
 export default function Detail({ route }) {
   const meal = route.params;
   const [data, setData] = useState([]);
@@ -32,7 +33,7 @@ export default function Detail({ route }) {
   return (
     <SafeAreaView style={styles.container}>
       {loading ? (
-        <ActivityIndicator size={"large"} />
+        <Lottie source={require("../../loading.json")} autoPlay loop />
       ) : (
         <FlatList data={data} renderItem={rendered} />
       )}

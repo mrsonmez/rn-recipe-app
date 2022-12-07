@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import CategoriesCard from "./Card/CategoriesCard";
 import axios from "axios";
 import { API_URL } from "@env";
+import Lottie from "lottie-react-native";
 export default function Categories({ navigation }) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,7 @@ export default function Categories({ navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       {loading ? (
-        <ActivityIndicator size={"large"} />
+        <Lottie source={require("../../loading.json")} autoPlay loop />
       ) : (
         <FlatList data={data} renderItem={rendered} />
       )}

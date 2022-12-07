@@ -1,4 +1,6 @@
-![photoofap](./recipeapp.png)
+| Main Menu                     | Meals Menu                    | Details Menu                      |
+| ----------------------------- | ----------------------------- | --------------------------------- |
+| ![main menu](./recipeapp.png) | ![meals menu](./mealPage.png) | ![details menu](./detailPage.png) |
 
 ## About
 

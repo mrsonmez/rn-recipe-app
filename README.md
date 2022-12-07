@@ -18,5 +18,5 @@ npx expo start
 # Used Techs
 
 ```
-React-native,Redux
+React-native,Lottie
 ```
